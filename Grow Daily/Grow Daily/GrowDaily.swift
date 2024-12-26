@@ -8,10 +8,11 @@
 import SwiftUI
 
 @main
-struct Grow_DailyApp: App {
+struct GrowDaily: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HomeView()
+                .modelContainer(for: [Day.self, Thing.self])
         }
     }
 }
